@@ -1,0 +1,27 @@
+1. If I tried to implement a solution using “brute force”, would it work effectively? Why or why not?
+   For the proof of work portion of this project we have to mine in order to find a valid hash.
+   this does require brute force that meets the difficulty level but as the
+   level of difficulty increases so does the time required to find valid nonce.
+   Brute force does work but its very slow and that is good for security reasons.
+   
+2. Did your solution work effectively to solve your problem? Why or why not?
+   Mostly. Incorporating proper block and blockchain structure alongside proof of work with mining
+   and a transaction system with inputs, outputs, updates, and signatures the program works.
+   
+3. What are some of the issues with your solution?
+    For my solution the secuirity would not work in a real case cryptography system as
+    the signatures are faked. Also I did not use any networking and its all running in memory.
+   
+4. What are some of the edge cases with your solution?
+   Edge cases to consider: timestamps, insufficient funs, signature issues, duplicate UTXO, chain replacement.
+   For timestamps they can be invalid if blocks are generated during the 60 second check. When transactions
+   are done and fail an exception is thrown but there isnt anything more to that like error recovery. Signatures are faked.
+   And there arent checks for spending the same UTXO in two transactions at the same time.
+   Also Chain replacement is simulated so in real world enviroment where you are alongside other peers
+   there would be conflicting chains.
+   
+5.How might you improve your idea in the future?
+ In the future I would improve the transaction management and clean up the performance for mining to make it more
+realistic. I could also implement a wallet system where the user actually has real private and public keys
+and the wallet can manage those and track balances. A GUI would also complete the project as users would be
+able to send and recieve coins and this would simulate something closer to a real world cryptocurrency application.
