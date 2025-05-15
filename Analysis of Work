@@ -11,6 +11,9 @@
 3. What are some of the issues with your solution?
     For my solution the secuirity would not work in a real case cryptography system as
     the signatures are faked. Also I did not use any networking and its all running in memory.
+    Not really an issue but I did not fully implement the entirety of the project rather only the 
+   blockchain, proof of work, and transactions and didnt do the wallet UI and blockchain explorer
+   so that could be finished in the future.
    
 4. What are some of the edge cases with your solution?
    Edge cases to consider: timestamps, insufficient funs, signature issues, duplicate UTXO, chain replacement.
